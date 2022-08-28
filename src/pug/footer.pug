@@ -1,0 +1,33 @@
+footer.footer#form
+  .container-md
+    h2.footer__title(data-scrollspy="animate__fadeInUp") Become the heart of our home
+    h3.footer__subtitle(data-scrollspy="animate__fadeInUp") be part of the future with Homelife Carers and apply today
+    form(action="#" method="post").form-cv
+      .form__row
+        .form__col(data-scrollspy="animate__fadeInLeft")
+          .form-input
+            input(type="text" name="name" placeholder="Name *").input
+          .form-input
+            input(type="tel" name="phone" placeholder="Telephone *").input
+          .form-input
+            input(type="email" name="email" placeholder="Email *").input
+          input(type="file" name="upload").input-upload#upload
+        .form__col(data-scrollspy="animate__fadeInRight")
+          label(for="upload").label-upload
+            span.bold Do you have a cv? 
+            span.bold.underlined Upload here
+            span (Don’t worry, This is optional)
+      div
+        .form__checkbox(data-scrollspy="animate__fadeInDown")
+          label.checkbox.option
+            input.checkbox__input#checkbox(type='checkbox')
+            span.checkbox__box
+            div I acknowledge and give permission for my data to be held by Homelife Carers and WeLove9am in accordance with the <a href="/" class="link" target="_blank" rel="noopener noreferrer">General Data Protection Regulation</a>.
+        .form__button-apply(data-scrollspy="animate__fadeInDown")
+          button(type="submit" value="apply now" name="submit").button.button-apply Apply for a role today
+    img(
+      src="img/logo.png", 
+      alt="Homelife Carers logo: your home, your life, we care", 
+      srcset="img/logo@2x.png 2x, img/logo@3x.png 3x" data-scrollspy="animate__fadeInUp").footer__logo
+    .copyright(data-scrollspy="animate__fadeInUp") &copy; 2021 WeLove9am 
+    img.footer__img(src="img/house.png" data-scrollspy="animate__fadeInRight" alt="house")

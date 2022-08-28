@@ -1,0 +1,132 @@
+.button {
+  transition: background-color $transition-duration;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    transition: background-color $transition-duration;
+  }
+}
+
+.button-apply {
+  position: fixed;
+  z-index: 10;
+  min-width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: $secondary-color;
+  height: 75px;
+  border-radius: 0;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.16);
+  color: $text-color-white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 16px;
+
+  &.hidden {
+    z-index: -1;
+    opacity: 0;
+  }
+
+  @include tablet {
+    position: static;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: $border-radius;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    font-family: $font-family;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 17px 24px;
+    min-width: 303px;
+    height: 52px;
+    box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.51);
+  }
+}
+
+.button-apply-header {
+  display: none;
+
+  &.hidden {
+    z-index: -1;
+    opacity: 0;
+  }
+
+  @include laptop {
+    display: block;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: $border-radius;
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding: 17px 29px;
+    min-width: 303px;
+    height: 52px;
+    box-shadow: none;
+    top: 24px;
+    right: 36px;
+    font-size: 16px;
+  }
+}
+
+.button-section-scroll {
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+
+  &:hover {
+    transform: translateY(20px);
+    transition-property: transform, opacity;
+    transition-duration: 1s;
+    opacity: 0.5;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+
+    @include tablet {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+.button-mobile {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
+.button-desktop {
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+#apply.animate__fadeInDown,
+#apply.animate__fadeOutDown {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-duration: var(--animate-duration);
+  animation-duration: var(--animate-duration);
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

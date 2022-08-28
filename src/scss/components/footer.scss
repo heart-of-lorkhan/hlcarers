@@ -1,0 +1,96 @@
+.footer {
+  background-image: url(../img/background-purple.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding-top: 24px;
+
+  @include tablet {
+    padding-top: 60px;
+  }
+
+  @include desktop {
+    padding-bottom: 32px;
+  }
+
+  @include desktop-xl {
+    padding-bottom: 100px;
+  }
+}
+
+.footer__title {
+  color: $text-color-white;
+  text-align: center;
+  font-size: 31px;
+  letter-spacing: -1.33px;
+  line-height: 1.13;
+  font-weight: 900;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 16px;
+
+  @include tablet {
+    font-size: 44px;
+    letter-spacing: -3.3px;
+  }
+}
+
+.footer__subtitle {
+  color: $text-color-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 42px;
+
+  @include tablet {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.footer__img {
+  margin-top: -30%;
+  margin-bottom: -30%;
+  margin-left: -250px;
+  margin-right: -250px;
+  max-width: calc(100% + 500px);
+
+  @include laptop {
+    max-width: 100%;
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    width: 700px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    width: 60%;
+  }
+
+  @include desktop-xl {
+    width: 1000px;
+    right: 0;
+  }
+
+  @include desktop-xxl {
+    right: 200px;
+    bottom: -60px;
+  }
+}
+
+.copyright {
+  color: $text-color-white;
+  text-align: center;
+  font-size: 8px;
+
+  @include desktop-xl {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,134 @@
+.about-us {
+  padding-top: 36px;
+
+  @include laptop {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  &__col-left {
+    background-image: url("../img/lighthouse.png");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    padding-bottom: 50%;
+    background-size: contain;
+    margin-right: -36px;
+    margin-left: -36px;
+
+    @include tablet {
+      background-position: 50% 350px;
+      padding-bottom: 50%;
+    }
+
+    @include laptop {
+      background-size: 50%;
+      background-position: 100% 75%;
+      margin-right: 0;
+      margin-left: 0;
+      padding-bottom: 0;
+    }
+
+    @include desktop {
+      padding-left: 6%;
+    }
+
+    @include desktop-xl {
+      background-size: 60%;
+      background-position: 100% 80%;
+    }
+
+    .section-col {
+      padding-right: 36px;
+      padding-left: 36px;
+      margin-right: auto;
+      margin-left: auto;
+
+      @include laptop {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+        max-width: 50%;
+      }
+
+      @include desktop {
+        max-width: 600px;
+      }
+    }
+  }
+
+  &__col-right {
+    background-repeat: no-repeat;
+    background-position: 50% 150%;
+    margin-right: -36px;
+    margin-left: -36px;
+
+    @include laptop {
+      display: block;
+      background-size: 75%;
+      background-position: -50% 0%;
+      margin-right: 0;
+      margin-left: 0;
+      background-image: url("../img/trees.png");
+    }
+
+    @include desktop {
+      padding-right: 6%;
+      background-size: 50%;
+      background-position: 0 0;
+    }
+
+    @include desktop-xl {
+      display: block;
+      background-size: 60%;
+      background-position: 0 100%;
+    }
+
+    .section-col {
+      padding-right: 36px;
+      padding-left: 36px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-bottom: 0;
+
+      @include laptop {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: auto;
+        max-width: 50%;
+      }
+
+      @include desktop {
+        max-width: 600px;
+      }
+    }
+  }
+
+  &__video {
+    margin-right: -36px;
+    margin-left: -36px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include tablet {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1056px;
+    }
+
+    @include tablet-large {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    @include desktop-xxl {
+      max-width: 1372px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

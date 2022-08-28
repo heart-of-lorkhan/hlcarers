@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  padding-right: 36px;
+  padding-left: 36px;
+  margin: 0 auto;
+  max-width: 1920px;
+
+  @include desktop {
+    padding-right: 72px;
+    padding-left: 72px;
+  }
+}
+.container-md {
+  min-width: 320px;
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 36px;
+  padding-right: 36px;
+}

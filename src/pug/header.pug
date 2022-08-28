@@ -1,0 +1,23 @@
+header.header
+  .header__top#header-top(data-scrollspy="animate__fadeInDown")
+    .header__inner
+      button.button.button-apply-header(data-scrollto="#form") Apply for a role today
+      .header__logo
+        img(
+          src="img/logo.png", 
+          alt="Homelife Carers logo: your home, your life, we care", 
+          srcset="img/logo@2x.png 2x, img/logo@3x.png 3x").logo
+  .hero
+    .hero__info
+      .hero__badge
+        p We’re Hiring!
+      h1.hero__title Your heart is our home
+      h2.hero__middle-title be part of the future with Homelife Carers
+      h3.hero__subtitle We’re hiring care assistants based in your area
+
+      button.button.button-apply#apply(data-scrollto="#form")
+        span.button-mobile Apply now 
+        span.button-desktop Apply for a role today
+      button.button-section-scroll.is-visible-md(data-scrollto="#about-us")
+        +svg('down-arrow')
+    video.hero__video(muted="" src="#")

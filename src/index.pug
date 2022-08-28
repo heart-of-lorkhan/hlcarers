@@ -1,0 +1,79 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Homelife Carers: Your Home, Your Life, We Care'
+
+append vars
+  //-
+
+block content
+  main.main
+    section.section.about-us#about-us
+      .container 
+        .section-row.about-us__col-left
+          .section-col(data-scrollspy="animate__fadeInLeft")
+            h2.section-title Providing peace of mind throughout the community
+            p Are you considering a career in care? HomeLife Careers are a successful domiciliary care company, working in partnership with Devon Cares (NHS). We offer a local, compassionate service which is dedicated to providing individuals with the best comfort and quality of care, in the comfort of their home and familiar surroundings. 
+            p We are looking to expand our team of committed care workers and looking for enthusiastic, warm hearted individuals who are passionate about making a difference to people’s lives. We have flexible opportunities ranging from Part time to full time roles, with a variety of shifts, tailored to you. 
+        .section-row.about-us__col-right
+          .section-col(data-scrollspy="animate__fadeInRight")
+            h3.section-title About us at Homelife Carers 
+            p We pride ourselves on offering a sensitive, courteous home care service with, allowing you or your loved ones to continue enjoying the comforts of home without compromising on quality care. With dignity and independence remaining our key priorities, our carers build lasting friendships and trust and mutual trust. Whilst regularly monitoring and assessing individual care needs at its core to guarantee the best warm hearted service. Putting our clients at the centre of what we do. 
+            ul.values 
+              li.values__item
+                .values__item-bg
+                  img(src="img/ball-purple.png" srcset="img/ball-purple@2x.png 2x" alt="purple ball" width="135" height="135")
+                  +svg('hourglass').values__icon
+                .values__caption Respite
+              li.values__item
+                .values__item-bg
+                  img(src="img/ball-purple.png" srcset="img/ball-purple@2x.png 2x" alt="purple ball" width="135" height="135")
+                  +svg('support')
+                .values__caption Support for Younger People
+              li.values__item
+                .values__item-bg
+                  img(src="img/ball-purple.png" srcset="img/ball-purple@2x.png 2x" alt="purple ball" width="135" height="135")
+                  +svg('medication')
+                .values__caption Medication
+              li.values__item
+                .values__item-bg
+                  img(src="img/ball-purple.png" srcset="img/ball-purple@2x.png 2x" alt="purple ball" width="135" height="135")
+                  +svg('care')
+                .values__caption Personal care
+        .about-us__video
+          .video(data-scrollspy="animate__fadeInUp")
+            .video__controls
+              button.video__button-play
+                +svg("play-button")
+            video.viewer(src="video/homelife.mp4" width="1372" height="772" poster="img/video-poster.jpg")
+    section.career
+      .container
+        .section-row
+          .section-col.career__section-col(data-scrollspy="animate__fadeInLeft")
+            .career__section-col-detail
+              h3.section-title Start your care career with us today
+              p We are based within your local community, providing flexibility shifts that are tailored to your schedule. Our carers visit our clients in their own home, assisting with tasks from light domestic duties, to more complex personal care. Be a part of making somebody’s life shine with a thoughtful career in care. If that isn’t rewarding enough, we have a whole host perks available to you. 
+              ul.section-list
+                li
+                  +svg('checkmark')
+                  span An outstanding reputation in the local community and with our customers
+                li
+                  +svg('checkmark') 
+                  span Proud to care bonus – not to mention an additional week’s salary paid every 6 months!
+                li
+                  +svg('checkmark')
+                  span Company Pension Scheme
+                li 
+                  +svg('checkmark')
+                  span Holiday allowance to enjoy those well deserved breaks
+                li 
+                  +svg('checkmark')
+                  span Competitive rates of pay – from £10-11.50 per hour
+                li 
+                  +svg('checkmark')
+                  span Full uniform and equipment provided
+                li 
+                  +svg('checkmark')
+                  span Plus many more rewarding perks to enjoy..
+          img.career__img(src="img/career.png" alt="Start your care career with us today" data-scrollspy="animate__fadeInRight")

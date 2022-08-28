@@ -1,0 +1,50 @@
+.video {
+  position: relative;
+  z-index: 0;
+
+  &__controls {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1372px;
+    width: 100%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(175, 155, 192, 0.7);
+  }
+
+  &__button-play {
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    color: #fff;
+    transition: opacity $transition-duration;
+
+    &:focus,
+    &:hover,
+    &:active {
+      opacity: 0.8;
+      transition: opacity $transition-duration;
+    }
+
+    @include tablet {
+      width: 162px;
+      height: 162px;
+    }
+
+    @include desktop-xxl {
+      width: 210px;
+      height: 210px;
+    }
+  }
+
+  video {
+    width: 100%;
+  }
+}

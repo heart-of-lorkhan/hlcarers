@@ -1,0 +1,73 @@
+.career__section-col {
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  max-width: 100%;
+  color: $text-color;
+
+  @include laptop {
+    width: 50%;
+  }
+}
+
+.career .container {
+  padding: 0;
+
+  @include laptop {
+    padding: 0;
+  }
+}
+
+.career__section-col-detail {
+  max-width: 686px;
+  margin-left: auto;
+  padding-right: 36px;
+  padding-left: 36px;
+
+  @include tablet {
+    padding-left: 36px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include laptop {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+.career .section-row {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+
+  @include laptop {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.career {
+  padding-top: 36px;
+  background-color: $light-lavender-color;
+
+  @include laptop {
+    padding-top: 0;
+  }
+}
+
+.career__img {
+  max-height: 625px;
+  object-fit: cover;
+
+  @include laptop {
+    margin-left: 0;
+    max-height: 100%;
+    align-self: stretch;
+    max-width: 50%;
+  }
+
+  @include desktop-xl {
+    max-width: 100%;
+  }
+}
